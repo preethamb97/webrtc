@@ -34,4 +34,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.APP_PORT);
+server.listen(process.env.APP_PORT, () => {
+  console.log(`Server listning on PORT ${process.env.APP_PORT}`);
+});
